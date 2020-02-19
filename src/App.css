@@ -4,6 +4,7 @@
   --city-lights: #dfe6e9;
   --robin-egg: #00cec9;
   --exodus-fruit: #6c5ce7;
+  --shy-moment: #a29bfe;
   --dracula: #2d3436;
 }
 
@@ -49,14 +50,15 @@ font-family: 'Tomorrow', sans-serif;
 
 body {
   background: var(--dark-pink-bg);
-  color: var(--city-lights);
+  color: #fff;
+  overflow-y: hidden;
 }
 
 h1 {
   padding: 30px 0;
   font-size: 4.8rem;
   background: var(--exodus-fruit);
-  border-bottom: solid 2px var(--dracula);
+  border-bottom: solid 5px var(--shy-moment);
 }
 
 .image-otd {
@@ -70,8 +72,8 @@ h1 {
 .image-container {
   width: 600px;
   height: 600px;
-  padding-bottom: 20px;
-  margin: 50px auto;
+  padding-bottom: 90px;
+  margin: 50px 50px 0 auto;
   background: var(--city-lights);
   box-shadow: 9px -9px var(--light-pink-bg);
   border-radius: 3px;
@@ -79,12 +81,22 @@ h1 {
 .nasa-image-otd {
   margin-top: 15px;
   width: 95%;
+  border-radius: 3px;
 }
 .date-title {
+  width: 95%;
+  margin: 18px auto;
+  padding: 12px 0;
   font-family: 'Permanent Marker', cursive;
-  font-size: 4rem;
+  font-size: 3.4rem;
   color: var(--dracula);
+  border-radius: 8px;
+  box-shadow: -5px -5px 10px #fdfefe, 5px 5px 10px #adbfc6;
 }
+.date-title p:first-child {
+  font-size: 4rem;
+}
+
 /* Title stuff */
 .title-container {
   font-size: 1.8rem;
