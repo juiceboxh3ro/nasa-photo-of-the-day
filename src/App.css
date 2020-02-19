@@ -1,3 +1,17 @@
+:root {
+  --dark-pink-bg: #e84393;
+  --light-pink-bg: #fd79a8;
+  --city-lights: #dfe6e9;
+  --robin-egg: #00cec9;
+  --exodus-fruit: #6c5ce7;
+  --dracula: #2d3436;
+}
+
+/*
+font-family: 'Lacquer', sans-serif;
+font-family: 'Tomorrow', sans-serif;
+*/
+
 .App {
   text-align: center;
 }
@@ -20,7 +34,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--robin-egg);
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +44,63 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* My CSS begins here */
+
+body {
+  background: var(--dark-pink-bg);
+  color: var(--city-lights);
+}
+
+h1 {
+  padding: 30px 0;
+  font-size: 4.8rem;
+  background: var(--exodus-fruit);
+  border-bottom: solid 2px var(--dracula);
+}
+
+.image-otd {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Image stuff */
+.image-container {
+  width: 600px;
+  height: 600px;
+  padding-bottom: 20px;
+  margin: 50px auto;
+  background: var(--city-lights);
+  box-shadow: 9px -9px var(--light-pink-bg);
+  border-radius: 3px;
+}
+.nasa-image-otd {
+  margin-top: 15px;
+  width: 95%;
+}
+.date-title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4rem;
+  color: var(--dracula);
+}
+/* Title stuff */
+.title-container {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Description stuff */
+
+.description-container {
+  padding: 30px;
+  background: var(--dracula);
+  border-radius: 3px;
+  font-family: 'Tomorrow', sans-serif;
+  letter-spacing: 1.4px;
+  line-height: 2.4;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2.4rem;
 }
