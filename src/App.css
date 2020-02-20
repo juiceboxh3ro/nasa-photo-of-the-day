@@ -1,3 +1,18 @@
+:root {
+  --dark-pink-bg: #e84393;
+  --light-pink-bg: #fd79a8;
+  --city-lights: #dfe6e9;
+  --robin-egg: #00cec9;
+  --exodus-fruit: #6c5ce7;
+  --shy-moment: #a29bfe;
+  --dracula: #2d3436;
+}
+
+/*
+font-family: 'Lacquer', sans-serif;
+font-family: 'Tomorrow', sans-serif;
+*/
+
 .App {
   text-align: center;
 }
@@ -20,7 +35,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--robin-egg);
 }
 
 @keyframes App-logo-spin {
@@ -31,3 +46,34 @@
     transform: rotate(360deg);
   }
 }
+
+/* My CSS begins here */
+
+body {
+  background: var(--dark-pink-bg);
+  color: #fff;
+  overflow-y: hidden;
+}
+
+/* 
+h1 {
+
+}
+.image-otd {
+
+}
+.image-container {
+
+}
+.nasa-image-otd {
+
+}
+.date-title {
+
+}
+.date-title p:first-child {
+
+}
+.description-container {
+
+} */
