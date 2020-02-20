@@ -8,15 +8,13 @@ const ImageComponent = props => {
   }
 
   return (
-    <div>
-      <ImageContainer className="image-container">
-        <NasaImageOTD className="nasa-image-otd" src={props.image.url} alt="Stars from NASA" />
-        <DateTitle className="date-title">
-          <FontSizeDate>{props.image.date}</FontSizeDate>
-          <FontSizeTitle>{props.image.title}</FontSizeTitle>
-        </DateTitle>
-      </ImageContainer>
-    </div>
+    <ImageContainer className="image-container">
+      <NasaImageOTD className="nasa-image-otd" src={props.image.url} alt="Stars from NASA" />
+      <DateTitle className="date-title">
+        <FontSizeDate>{props.image.date}</FontSizeDate>
+        <FontSizeTitle>{props.image.title}</FontSizeTitle>
+      </DateTitle>
+    </ImageContainer>
   )
 }
 

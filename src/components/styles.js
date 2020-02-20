@@ -15,13 +15,13 @@ export const ImageOTD = styled.div`
   margin: 50px auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 `;
 
 // Description Component
 
 export const DescriptionContainer = styled.div`
-  margin: 0 auto;
   padding: 30px;
   width: 600px;
   max-width: 600px;
@@ -39,8 +39,8 @@ export const DescriptionContainer = styled.div`
 export const ImageContainer = styled.div`
   width: 600px;
   height: 600px;
+  margin-right: 150px;
   padding-bottom: 130px;
-  margin: 0 50px 0 auto;
   background: ${city_lights};
   box-shadow: 9px -9px ${light_pink};
   border-radius: 3px;
