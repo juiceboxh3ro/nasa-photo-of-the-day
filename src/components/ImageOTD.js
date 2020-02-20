@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import ImageComponent from "./ImageComponent";
 import DescriptionComp from "./DescriptionComp";
-import TitleComp from "./TitleComp";
+// import TitleComp from "./TitleComp";
 
 export default function Image() {
   const [data, setData] = useState();
+  const [date, setDate] = useState('2020-02-19')
 
   useEffect(() => {
-    fetch("https://api.nasa.gov/planetary/apod?api_key=GWzMC81MiiFRTwWvahnH0L5LceUFoP6fMSrCPVut")
+    fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=GWzMC81MiiFRTwWvahnH0L5LceUFoP6fMSrCPVut`)
     .then(res => res.json())
     .then(response => {
       setData(response);

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ImageOTD from "./components/ImageOTD"
+import ImageOTD from "./components/ImageOTD";
 
 function App() {
   return (

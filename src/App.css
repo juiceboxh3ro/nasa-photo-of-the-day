@@ -51,7 +51,7 @@ font-family: 'Tomorrow', sans-serif;
 body {
   background: var(--dark-pink-bg);
   color: #fff;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 h1 {
@@ -63,7 +63,7 @@ h1 {
 
 .image-otd {
   width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,7 +73,7 @@ h1 {
   width: 600px;
   height: 600px;
   padding-bottom: 90px;
-  margin: 50px 50px 0 auto;
+  margin: 0 50px 0 auto;
   background: var(--city-lights);
   box-shadow: 9px -9px var(--light-pink-bg);
   border-radius: 3px;
@@ -94,7 +94,7 @@ h1 {
   box-shadow: -5px -5px 10px #fdfefe, 5px 5px 10px #adbfc6;
 }
 .date-title p:first-child {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 
 /* Title stuff */
@@ -106,13 +106,15 @@ h1 {
 /* Description stuff */
 
 .description-container {
+  margin: 0 auto;
   padding: 30px;
+  width: 600px;
+  height: 630px;
   background: var(--dracula);
+  box-shadow: 9px -9px var(--light-pink-bg);
   border-radius: 3px;
   font-family: 'Tomorrow', sans-serif;
   letter-spacing: 1.4px;
   line-height: 2.4;
-  width: 80%;
-  margin: 0 auto;
   font-size: 2.4rem;
 }
